@@ -5,7 +5,10 @@
 function run() {
   const code = document.getElementById("code").value;
   const previewFrame = document.getElementById("previewFrame").contentWindow;
-  previewFrame.postMessage({ command: "preview", arg: code }, "*");
+  previewFrame.postMessage(
+    { command: "preview", arg: code },
+    "https://codesandbox.io/"
+  );
 }
 
 function say(txt) {
