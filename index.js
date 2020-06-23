@@ -1,5 +1,4 @@
 /**
- * JS Playground implementation using eval in iframe
  */
 
 function run() {
