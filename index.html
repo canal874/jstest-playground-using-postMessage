@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    Code Input:<br />
+    <textarea id="code">
+      say("(1) 'Hello!'");
+      try {
+        parent.say("(2) 'Hello!'");
+      } catch (e) {
+        say(`(2) Cannot say hello to parent: ${e}`);
+      }
+      </textarea
+    ><br />
+    <input type="button" value="Run" onclick="run()" /><br />
+    Preview (iframe): <br />
+    <iframe
+      id="previewFrame"
+      src="preview.html"
+      sandbox="allow-forms allow-modals allow-popups 
+        allow-presentation allow-scripts"
+    ></iframe>
+    <br />
+  </body>
+</html>
