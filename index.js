@@ -1,4 +1,5 @@
 /**
+ * JS Playground implementation using new Function() in iframe
  */
 
 function run() {
